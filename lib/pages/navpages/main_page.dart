@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/pages/navpages/bar_item_page.dart';
-import 'package:travel_app/pages/navpages/home_page.dart';
+import 'package:travel_app/pages/home_page.dart';
 import 'package:travel_app/pages/navpages/my_page.dart';
 import 'package:travel_app/pages/navpages/search_page.dart';
 
@@ -32,7 +32,7 @@ class _MainPageState extends State<MainPage> {
       backgroundColor: Colors.white,
       body: pages[currentIndex],
       bottomNavigationBar: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.white,
         ),
         child: Padding(
@@ -46,8 +46,8 @@ class _MainPageState extends State<MainPage> {
             currentIndex: currentIndex,
             selectedItemColor: Colors.black54,
             unselectedItemColor: Colors.grey.withOpacity(0.5),
-            showSelectedLabels: false,
-            showUnselectedLabels: false,
+            // showSelectedLabels: false,
+            // showUnselectedLabels: false,
             elevation: 0,
             items: const [
               BottomNavigationBarItem(icon: Icon(Icons.apps), label: 'Home'),
